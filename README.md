@@ -51,19 +51,35 @@ Please create your test cases and run the following command to verify the functi
 bazel test tests:q2_student_test
 ```
 
-## Question 3 (20 Points. Easy)
+## Question 3 (40 Points. Easy)
 
-Write a function ```int findKthSmallest(const vector<vector<int>> &input, int k)``` that finds the kth smallest element among all elements in all vectors and returns that value.
-- You should do this without sorting the vector
-- Provide time complexity for your function
-- if k is invalid(eg: k <= 0), return -INX_MAX
+Suppose we have the following map from a digit (represented as a character) to a set of characters:\
+std::map<char, std::set<char>> m =\
+{\
+    {'0', {'a', 'b'}},\
+  {'1', {'d', 'f'}},\
+  {'2', {'g', 'h'}},\
+  {'3', {'j', 'k'}},\
+  {'4', {'m', 'n'}},\
+  {'5', {'p', 'q'}},\
+  {'6', {'t', 'u'}},\
+  {'7', {'w', 'x'}},\
+  {'8', {'!', '?'}},\
+  {'9', {'*', '#'}},\
+};
+  
+**1.** Assuming the above map is given to you as a global variable, return a **vector** of all possible **strings** that a given string of digits in can represent.\
+**2.** What is the worst case runtime and why?
 
-Example:\
-input: [ [0, 2], [1, 5], [6, 3, 15] ] and k = 2\
-output: 1
+**Example1:**\
+in: "34"\
+out: { "jm", "jn", "km", "kn" }
 
-input: [ [0, 2], [1, 2, 5], [6, 2, 2, 3, 15] ] and k = 7\
-output: 3
+
+**Example2:**\
+in: "345"\
+out: { "jmp", "jmq", "jnp", "jnq", "kmp", "kmq", "knp", "knq" }
+
 
 Write several tests using GTest for your function in [tests/q3student_test.cc](tests/q3_student_test.cc).
 
@@ -72,22 +88,45 @@ Please create your test cases and run the following command to verify the functi
 bazel test tests:q3_student_test
 ```
 
-## Question 4 (20 Points. Easy)
+## Question 4 (20 Points. Medium)
 
-We learn a few sorting algorithms in lecture, and picture below shows the order of dividing and merging in MergeSort:
+You are given a maze, a start and an end point, find out if there is at least one path from start to end. 
+  * The maze is a grid where some cells are blocked and you cannot go there.
+  * You can only move to the right, left, down, or up. You cannot move diagonally. 
+  * The maze is represented by a 2x2 vector where a 0 represents a blocked and 1 represents a free cell.
+  * Start and End are specified as pairs: (i,j), where i is the row, and j is the column.
+  * Notice that you don’t need to generate the path. Just find out if at least one path exists.
 
-<p align="center"><img width="80%" src="merge_sort.png" /></p>
+**Example 1:**
 
-Please create a similar image for sorting the letters in the following string in alphabetical order:
+<p align="left"><img width="40%" src="maze1.png" /></p>
+
+The maze is represented as a 2x2 vector called **maze** as follows:
+
+<p align="left"><img width="40%" src="maze2.png" /></p>
+
+**Input:** 2x2 maze (as shown above), start=(0,0), end=(4,4)\
+**Output:** true (because there is a path from cell (0,0) to (4,4)
+
+**Example 2:**
+
+
+<p align="left"><img width="40%" src="maze3.png" /></p>
+
+The maze is represented as a 2x2 vector called **maze** as follows:
+
+
+<p align="left"><img width="40%" src="maze4.png" /></p>
+
+**Input:** 2x2 maze (as shown above), start=(1,2), end=(4,4)\
+**Output:** false (because there is no path from cell (1,2) to (4,4)
+
+Write several tests using GTest for your function in [tests/q4student_test.cc](tests/q4_student_test.cc).
+
+Please create your test cases and run the following command to verify the functionality of your program.
 ```
-ilovecoding
+bazel test tests:q4_student_test
 ```
-To get full credit, you need to
- - clearly specify when you are dividing and when you are merging and what two arrays are being merged. 
- - derive the overall time compexity in your answer.
-You can either attach an image OR text representation of your solution.
-
-Ans:
 
 ## Optional Questions (No Credit)
 
