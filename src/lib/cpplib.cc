@@ -5,11 +5,13 @@
 using namespace std;
 
 // Question 1
+int ConvertToNumber(std::vector<int> &nums) {
 
+}
 
 // Question 2
-void CPPLib::heapSort(vector<int> &input) {
-
+vector<vector<int> > Permute(vector<int> &nums, int k) {
+    
 }
 
 // Question 3
