@@ -141,7 +141,7 @@ output:\
 
 Example :\
 Input: s = "catsanddog”,  dic = ["cat", "cats", "and", "sand", "dog"]\
-Output: [   "cats and dog",   "cat sand dog" ]
+Output: ["cats and dog", "cat sand dog"]
 
 
 
