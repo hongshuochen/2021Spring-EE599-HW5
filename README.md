@@ -13,9 +13,9 @@
 
 Given a vector of distinct integer digits (i.e. 0 to 9), convert the vector to an **integer** value called **result** that represents the vector. The output **result** is created by concatenating the vector elements to each other and converting it to a number.
 
-Example:
-Input: [1, 2, 3], output: 123
-Input: [0, 3, 2], output: 32
+Example:\
+Input: [1, 2, 3], output: 123\
+Input: [0, 3, 2], output: 32\
 Input: [1, 9, 9, 0], output: 1990
 
 Write several tests using GTest for your function in [tests/q1_student_test.cc](tests/q1_student_test.cc).
@@ -30,13 +30,13 @@ bazel test tests:q1_student_test
 Given a vector of **distinct** digits (i.e. 0 to 9) and a value k, find all permutations that satisfy the following:
 - If we convert the permutation to a number **result** (as in the ConvertToNumber in the previous question), then result >= k.
 
-Example :
-input:  [1, 2, 3], k = 150 
-output: 
-[ 
-  [2, 1, 3],
-  [2, 3, 1], 
-  [3, 1, 2], 
+Example :\
+input:  [1, 2, 3], k = 150 \
+output:\
+[\
+  [2, 1, 3],\
+  [2, 3, 1],\
+  [3, 1, 2],\
   [3, 2, 1]
 ]
 Explanation: [1, 2, 3], [1, 3, 2] are not included in the output because 123 < 150 and 132 < 150.
