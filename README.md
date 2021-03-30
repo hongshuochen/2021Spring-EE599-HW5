@@ -37,8 +37,8 @@ output:\
   [2, 1, 3],\
   [2, 3, 1],\
   [3, 1, 2],\
-  [3, 2, 1]
-]
+  [3, 2, 1]\
+]\
 Explanation: [1, 2, 3], [1, 3, 2] are not included in the output because 123 < 150 and 132 < 150.
 
 Please use early backtracking. 
