@@ -93,17 +93,17 @@ Ans:
 
 1.Find all permutations of a given list of digits (might have duplicates).
 
-Example :
-input:  [1, 1, 3]
-output:
-[ 
-  [1, 1, 3], [1, 3, 1], [3, 1, 1]
+Example :\
+input:  [1, 1, 3]\
+output:\
+[\ 
+  [1, 1, 3], [1, 3, 1], [3, 1, 1]\
 ]
 
 2.Given a non-empty string s and a dictionary containing a list of words,  add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.
 
-Example :
-Input: s = "catsanddog”,  dic = ["cat", "cats", "and", "sand", "dog"]
+Example :\
+Input: s = "catsanddog”,  dic = ["cat", "cats", "and", "sand", "dog"]\
 Output: [   "cats and dog",   "cat sand dog" ]
 
 
