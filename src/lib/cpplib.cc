@@ -5,16 +5,21 @@
 using namespace std;
 
 // Question 1
-int ConvertToNumber(std::vector<int> &nums) {
+int CPPLib::ConvertToNumber(std::vector<int> &nums) {
 
 }
 
 // Question 2
-vector<vector<int> > Permute(vector<int> &nums, int k) {
+vector<vector<int> > CPPLib::Permute(vector<int> &nums, int k) {
     
 }
 
 // Question 3
-int CPPLib::findKthSmallest(const vector<vector<int>> &input, int k) {
-    return 0;
+std::vector<std::string> CPPLib::AllPossibleStrings(const std::string &in){
+    
+}
+
+// Question 4
+bool CPPLib::DoesPathExist(std::vector<std::vector<int>> &maze, int start_i, int start_j, int end_i, int end_j){
+
 }
