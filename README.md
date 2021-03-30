@@ -1,7 +1,7 @@
 
 # HW5 EE599 - Computing Principles for Electrical Engineers
 
-- Deadline: Friday, October 30 by 23:59 pm
+- Deadline: Friday, April 9th by 23:59 pm
 - Total: 120 points. 100 points is considered full credit.
 
 **About Grading Rubrics**
