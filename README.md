@@ -1,8 +1,8 @@
 
 # HW5 EE599 - Computing Principles for Electrical Engineers
 
+- Optional homework, no credit
 - Deadline: No deadline
-- Total: 120 points. 100 points is considered full credit.
 
 **About Grading Rubrics**
 - For non-coding questions, you will find **Answer** below each question. Please write your answer there.
@@ -128,7 +128,7 @@ Please create your test cases and run the following command to verify the functi
 bazel test tests:q4_student_test
 ```
 
-## Optional Questions (No Credit)
+## Other Backtracking Questions (Optional reading in the slides)
 
 1.Find all permutations of a given list of digits (might have duplicates).
 
