@@ -135,9 +135,7 @@ bazel test tests:q4_student_test
 Example :\
 input:  [1, 1, 3]\
 output:\
-[\
-  [1, 1, 3], [1, 3, 1], [3, 1, 1]\
-]
+[[1, 1, 3], [1, 3, 1], [3, 1, 1]]
 
 2.Given a non-empty string s and a dictionary containing a list of words,  add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.
 
