@@ -16,7 +16,10 @@ class CPPLib {
   vector<vector<int> > Permute(vector<int> &nums, int k);
 
   //q3
-  int findKthSmallest(const vector<vector<int> > &input, int k);
+  std::vector<std::string> AllPossibleStrings(const std::string &in);
+ 
+  //q4
+  bool DoesPathExist(std::vector<std::vector<int>> &maze, int start_i, int start_j, int end_i, int end_j);
 
   private : 
 };
